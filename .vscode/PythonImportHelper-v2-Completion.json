@@ -49,6 +49,30 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "users",
+        "description": "users",
+        "isExtraImport": true,
+        "detail": "users",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.conf.urls",
+        "description": "django.conf.urls",
+        "isExtraImport": true,
+        "detail": "django.conf.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -57,11 +81,19 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -73,6 +105,128 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "users.managers",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "users.managers",
+        "description": "users.managers",
+        "detail": "users.managers",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "unicode_literals",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -81,11 +235,75 @@
         "documentation": {}
     },
     {
+        "label": "format_suffix_patterns",
+        "importPath": "rest_framework.urlpatterns",
+        "description": "rest_framework.urlpatterns",
+        "isExtraImport": true,
+        "detail": "rest_framework.urlpatterns",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "rest_framework.authtoken.models",
+        "description": "rest_framework.authtoken.models",
+        "isExtraImport": true,
+        "detail": "rest_framework.authtoken.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -147,7 +365,7 @@
         "kind": 5,
         "importPath": "crm.crm.settings",
         "description": "crm.crm.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"users\",\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"users\",\n    'rest_framework',\n    'rest_framework.authtoken',",
         "detail": "crm.crm.settings",
         "documentation": {}
     },
@@ -210,7 +428,7 @@
         "kind": 5,
         "importPath": "crm.crm.settings",
         "description": "crm.crm.settings",
-        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'users.User'\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [",
         "detail": "crm.crm.settings",
         "documentation": {}
     },
@@ -219,7 +437,7 @@
         "kind": 5,
         "importPath": "crm.crm.settings",
         "description": "crm.crm.settings",
-        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'users.User'\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.BasicAuthentication',",
         "detail": "crm.crm.settings",
         "documentation": {}
     },
@@ -228,7 +446,7 @@
         "kind": 5,
         "importPath": "crm.crm.settings",
         "description": "crm.crm.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'users.User'\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.BasicAuthentication',\n        'rest_framework.authentication.SessionAuthentication',",
         "detail": "crm.crm.settings",
         "documentation": {}
     },
@@ -237,7 +455,7 @@
         "kind": 5,
         "importPath": "crm.crm.settings",
         "description": "crm.crm.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'users.User'\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.BasicAuthentication',\n        'rest_framework.authentication.SessionAuthentication',\n        'rest_framework.authentication.TokenAuthentication',",
         "detail": "crm.crm.settings",
         "documentation": {}
     },
@@ -246,7 +464,25 @@
         "kind": 5,
         "importPath": "crm.crm.settings",
         "description": "crm.crm.settings",
-        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "peekOfCode": "STATIC_URL = \"static/\"\nAUTH_USER_MODEL = 'users.User'\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.BasicAuthentication',\n        'rest_framework.authentication.SessionAuthentication',\n        'rest_framework.authentication.TokenAuthentication',\n    ],\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',\n    'PAGE_SIZE': 10,",
+        "detail": "crm.crm.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "crm.crm.settings",
+        "description": "crm.crm.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'users.User'\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.BasicAuthentication',\n        'rest_framework.authentication.SessionAuthentication',\n        'rest_framework.authentication.TokenAuthentication',\n    ],\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',\n    'PAGE_SIZE': 10,\n    'DEFAULT_RENDERER_CLASSES': [",
+        "detail": "crm.crm.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "crm.crm.settings",
+        "description": "crm.crm.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework.authentication.BasicAuthentication',\n        'rest_framework.authentication.SessionAuthentication',\n        'rest_framework.authentication.TokenAuthentication',\n    ],\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',\n    'PAGE_SIZE': 10,\n    'DEFAULT_RENDERER_CLASSES': [\n        'rest_framework.renderers.JSONRenderer',",
         "detail": "crm.crm.settings",
         "documentation": {}
     },
@@ -264,7 +500,7 @@
         "kind": 5,
         "importPath": "crm.crm.urls",
         "description": "crm.crm.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('account/', include('users.urls')),\n]",
         "detail": "crm.crm.urls",
         "documentation": {}
     },
@@ -278,12 +514,138 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crm.users.migrations.0001_initial",
+        "description": "crm.users.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        (\"auth\", \"0012_alter_user_first_name_max_length\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"User\",\n            fields=[\n                (",
+        "detail": "crm.users.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "VoyaUserAdmin",
+        "kind": 6,
+        "importPath": "crm.users.admin",
+        "description": "crm.users.admin",
+        "peekOfCode": "class VoyaUserAdmin(admin.ModelAdmin):\n    list_display = ('email', 'first_name', 'mobile', 'login_type', 'is_active','date_joined')\n    list_filter = ('login_type',)\n    ordering = ['-date_joined']\n    search_fields = ( 'email', 'first_name', 'mobile', 'login_type')\nadmin.site.register(User , VoyaUserAdmin)",
+        "detail": "crm.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_header",
+        "kind": 5,
+        "importPath": "crm.users.admin",
+        "description": "crm.users.admin",
+        "peekOfCode": "admin.site.site_header = 'Horizon Voyager Administration'\n# Optionally, you can also customize the site title and index title\nadmin.site.site_title = 'Horizon Voyager Admin'\nadmin.site.index_title = 'Welcome to Horizon Voyager Admin'\nclass VoyaUserAdmin(admin.ModelAdmin):\n    list_display = ('email', 'first_name', 'mobile', 'login_type', 'is_active','date_joined')\n    list_filter = ('login_type',)\n    ordering = ['-date_joined']\n    search_fields = ( 'email', 'first_name', 'mobile', 'login_type')\nadmin.site.register(User , VoyaUserAdmin)",
+        "detail": "crm.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.site_title",
+        "kind": 5,
+        "importPath": "crm.users.admin",
+        "description": "crm.users.admin",
+        "peekOfCode": "admin.site.site_title = 'Horizon Voyager Admin'\nadmin.site.index_title = 'Welcome to Horizon Voyager Admin'\nclass VoyaUserAdmin(admin.ModelAdmin):\n    list_display = ('email', 'first_name', 'mobile', 'login_type', 'is_active','date_joined')\n    list_filter = ('login_type',)\n    ordering = ['-date_joined']\n    search_fields = ( 'email', 'first_name', 'mobile', 'login_type')\nadmin.site.register(User , VoyaUserAdmin)",
+        "detail": "crm.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin.site.index_title",
+        "kind": 5,
+        "importPath": "crm.users.admin",
+        "description": "crm.users.admin",
+        "peekOfCode": "admin.site.index_title = 'Welcome to Horizon Voyager Admin'\nclass VoyaUserAdmin(admin.ModelAdmin):\n    list_display = ('email', 'first_name', 'mobile', 'login_type', 'is_active','date_joined')\n    list_filter = ('login_type',)\n    ordering = ['-date_joined']\n    search_fields = ( 'email', 'first_name', 'mobile', 'login_type')\nadmin.site.register(User , VoyaUserAdmin)",
+        "detail": "crm.users.admin",
+        "documentation": {}
+    },
+    {
         "label": "UsersConfig",
         "kind": 6,
         "importPath": "crm.users.apps",
         "description": "crm.users.apps",
         "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"users\"",
         "detail": "crm.users.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "crm.users.managers",
+        "description": "crm.users.managers",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    use_in_migrations = True\n    def _create_user(self, email, password, **extra_fields):\n        \"\"\"\n        Creates and saves a User with the given email and password.\n        \"\"\"\n        if not email:\n            raise ValueError('The given mobile email must be set')\n        user = self.model(email=email, **extra_fields)\n        user.set_password(password)",
+        "detail": "crm.users.managers",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "crm.users.models",
+        "description": "crm.users.models",
+        "peekOfCode": "class User(AbstractUser):\n    USER_TYPES = (\n        ('admin', 'admin'),\n        ('host', 'host'),\n        ('traveller', 'traveller'),\n    )\n    GENDER = (\n        ('Male', 'Male'),\n        ('Female', 'Female'),\n        ('Others', 'Others'),",
+        "detail": "crm.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserAddress",
+        "kind": 6,
+        "importPath": "crm.users.models",
+        "description": "crm.users.models",
+        "peekOfCode": "class UserAddress(models.Model):\n    user =  models.ForeignKey(User, default='', null=True,blank=True, related_name='user_address',on_delete=models.CASCADE)\n    phone_no =  models.CharField(max_length=12,null=True,blank=True, default='')\n    house_no =  models.CharField(max_length=100,null=True,blank=True, default='')\n    locality =  models.CharField(max_length=100,null=True,blank=True, default='')\n    lat =  models.CharField(max_length=100,null=True,blank=True, default='')\n    lng =  models.CharField(max_length=100,null=True,blank=True, default='')\n    landmark =  models.CharField(max_length=100,null=True,blank=True, default='')\n    district =  models.CharField(max_length=100,null=True,blank=True, default='')\n    state =  models.CharField(max_length=100,null=True,blank=True, default='')",
+        "detail": "crm.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "crm.users.serializer",
+        "description": "crm.users.serializer",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        exclude = ('password','groups','user_permissions')\nclass UserAddressSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = UserAddress\n        fields = ['id','pincode', 'full_address', \"lat\", \"lng\"]\nclass UserAddressRetrunSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "crm.users.serializer",
+        "documentation": {}
+    },
+    {
+        "label": "UserAddressSerializer",
+        "kind": 6,
+        "importPath": "crm.users.serializer",
+        "description": "crm.users.serializer",
+        "peekOfCode": "class UserAddressSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = UserAddress\n        fields = ['id','pincode', 'full_address', \"lat\", \"lng\"]\nclass UserAddressRetrunSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = UserAddress\n        fields = '__all__'",
+        "detail": "crm.users.serializer",
+        "documentation": {}
+    },
+    {
+        "label": "UserAddressRetrunSerializer",
+        "kind": 6,
+        "importPath": "crm.users.serializer",
+        "description": "crm.users.serializer",
+        "peekOfCode": "class UserAddressRetrunSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = UserAddress\n        fields = '__all__'",
+        "detail": "crm.users.serializer",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crm.users.urls",
+        "description": "crm.users.urls",
+        "peekOfCode": "urlpatterns = [\n    path('sign-up', views.SignUpAPI.as_view()),\n    path('login', views.SignUpAPI.as_view()),\n    # path('all-order/', views.UserOrderAPIView.as_view()),\n]\nurlpatterns = format_suffix_patterns(urlpatterns) + urlpatterns",
+        "detail": "crm.users.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crm.users.urls",
+        "description": "crm.users.urls",
+        "peekOfCode": "urlpatterns = format_suffix_patterns(urlpatterns) + urlpatterns",
+        "detail": "crm.users.urls",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpAPI",
+        "kind": 6,
+        "importPath": "crm.users.views",
+        "description": "crm.users.views",
+        "peekOfCode": "class SignUpAPI(APIView):\n    def post(self, request, format = None):\n        data_get = request.data\n        value_set = {\n            'message' : '',\n            'error' : '',\n            'user' : '',   \n            'keys' : '',   \n        }\n        if 'login' in request.path or 'sign' in request.path:",
+        "detail": "crm.users.views",
         "documentation": {}
     },
     {
