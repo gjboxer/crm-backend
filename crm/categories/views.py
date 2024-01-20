@@ -1,9 +1,17 @@
 from rest_framework.viewsets import ModelViewSet
 from .models import Category
 from .serializers import CategorySerializer
-
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 class CategoryAPIViewSet(ModelViewSet):
+    """
+        API endpoint that allows Categories to be viewed or edited.
+    """
+
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+
     http_method_names = ['get', 'post', 'patch', 'delete']
     queryset = Category.objects.all()
     serializer_class = CategorySerializer

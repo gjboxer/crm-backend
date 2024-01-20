@@ -1,9 +1,17 @@
 from rest_framework.viewsets import ModelViewSet
 from .models import Agent
 from .serializers import AgentSerializer
-
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 class AgentAPIViewSet(ModelViewSet):
+    """
+        API endpoint that allows Agents to be viewed or edited.
+    """
+
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    
     http_method_names = ['get', 'post', 'patch', 'delete']
     queryset = Agent.objects.all()
     serializer_class = AgentSerializer

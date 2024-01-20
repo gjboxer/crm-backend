@@ -11,6 +11,13 @@ from rest_framework import filters
 from django_filters.rest_framework import DjangoFilterBackend
 
 class LeadAPIViewSet(ModelViewSet):
+    """
+        API endpoint that allows Leads to be viewed or edited.
+    """
+
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+
     http_method_names = ['get', 'post', 'patch', 'delete']
     queryset = Lead.objects.all()
     serializer_class = LeadSerializer
