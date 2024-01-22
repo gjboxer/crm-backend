@@ -13,8 +13,7 @@ from django.utils.translation import gettext_lazy as _
 class User(AbstractUser):
     USER_TYPES = (
         ('admin', 'admin'),
-        ('host', 'host'),
-        ('traveller', 'traveller'),
+        ('user', 'user'),
     )
     GENDER = (
         ('Male', 'Male'),

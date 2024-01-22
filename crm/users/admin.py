@@ -11,3 +11,4 @@ class VoyaUserAdmin(admin.ModelAdmin):
     search_fields = ( 'email', 'first_name', 'mobile', 'login_type')
 
 admin.site.register(User , VoyaUserAdmin)
+admin.site.register(UserAddress)
