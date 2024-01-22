@@ -25,8 +25,8 @@ class Lead(models.Model):
         null=True,
         on_delete=models.SET_NULL
     )
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True,blank=True,null=True)
+    updated_at = models.DateTimeField(auto_now=True,blank=True,null=True)
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
