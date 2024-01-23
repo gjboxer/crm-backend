@@ -31,7 +31,7 @@ class LeadAPIViewSet(ModelViewSet):
             Return a list of all Leads from database.
         """
         # give paginated response according to super user and normal user
-        if request.user.is_superuser:
+        if request.user.is_superuser or request.user.role == 'admin':
             queryset = Lead.objects.all()
         elif request.user.is_authenticated:
             queryset = Lead.objects.filter(agent=request.user)
@@ -73,7 +73,7 @@ class LeadAPIViewSet(ModelViewSet):
             return super().partial_update(request, *args, **kwargs)
         elif request.user.is_authenticated:
             lead = self.get_object()
-            if lead.agent == request.user:
+            if lead.agent == request.user or request.user.role == 'admin':
                 return super().partial_update(request, *args, **kwargs)
             else:
                 return Response(status=status.HTTP_403_FORBIDDEN)
@@ -87,7 +87,7 @@ class LeadAPIViewSet(ModelViewSet):
             return super().destroy(request, *args, **kwargs)
         elif request.user.is_authenticated:
             lead = self.get_object()
-            if lead.agent == request.user:
+            if lead.agent == request.user or request.user.role == 'admin': 
                 return super().destroy(request, *args, **kwargs)
             else:
                 return Response(status=status.HTTP_403_FORBIDDEN)

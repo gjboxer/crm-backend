@@ -29,8 +29,10 @@ class CategoryAPIViewSet(ModelViewSet):
             Create a Category on database.
         """
         # only superuser can create categories
+        print(request.user.role)
         if not request.user.is_superuser:
-            return Response(status=status.HTTP_403_FORBIDDEN)
+            if request.user.role != 'admin':
+                return Response(status=status.HTTP_403_FORBIDDEN)
         return super().create(request, *args, **kwargs)
 
     def retrieve(self, request, *args, **kwargs):
@@ -45,7 +47,8 @@ class CategoryAPIViewSet(ModelViewSet):
         """
         # only superuser can update categories
         if not request.user.is_superuser:
-            return Response(status=status.HTTP_403_FORBIDDEN)
+            if request.user.role != 'admin':
+                return Response(status=status.HTTP_403_FORBIDDEN)
         return super().partial_update(request, *args, **kwargs)
 
     def destroy(self, request, *args, **kwargs):
@@ -54,5 +57,6 @@ class CategoryAPIViewSet(ModelViewSet):
         """
         # only superuser can delete categories
         if not request.user.is_superuser:
-            return Response(status=status.HTTP_403_FORBIDDEN)
+            if request.user.role != 'admin':
+                return Response(status=status.HTTP_403_FORBIDDEN)
         return super().destroy(request, *args, **kwargs)
