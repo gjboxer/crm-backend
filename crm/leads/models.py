@@ -1,8 +1,7 @@
 from django.db import models
 from categories.models import Category
-from agents.models import Agent
-
-
+from django.contrib.auth.models import User
+from django.conf import settings
 class Lead(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
@@ -21,7 +20,7 @@ class Lead(models.Model):
         on_delete=models.SET_NULL
     )
     agent = models.ForeignKey(
-        Agent,
+        settings.AUTH_USER_MODEL,
         null=True,
         on_delete=models.SET_NULL
     )

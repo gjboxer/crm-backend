@@ -30,8 +30,4 @@ urlpatterns = [
         "categories/",
         include("categories.urls"),
     ),
-    path(
-        "agents/",
-        include("agents.urls"),
-    ),
 ]

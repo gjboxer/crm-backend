@@ -30,7 +30,15 @@ class LeadAPIViewSet(ModelViewSet):
         """
             Return a list of all Leads from database.
         """
-        return super().list(request, *args, **kwargs)
+        # give paginated response according to super user and normal user
+        if request.user.is_superuser:
+            queryset = Lead.objects.all()
+        elif request.user.is_authenticated:
+            queryset = Lead.objects.filter(agent=request.user)
+        else:
+            queryset = Lead.objects.none()
+        serializer = LeadSerializer(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request, *args, **kwargs):
         """
@@ -56,10 +64,27 @@ class LeadAPIViewSet(ModelViewSet):
         """
             Applies partial update to a Lead.
         """
-        return super().partial_update(request, *args, **kwargs)
-
+        if request.user.is_superuser:
+            return super().partial_update(request, *args, **kwargs)
+        elif request.user.is_authenticated:
+            lead = self.get_object()
+            if lead.agent == request.user:
+                return super().partial_update(request, *args, **kwargs)
+            else:
+                return Response(status=status.HTTP_403_FORBIDDEN)
+        else:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
     def destroy(self, request, *args, **kwargs):
         """
             Delete a Lead from database.
         """
-        return super().destroy(request, *args, **kwargs)
+        if request.user.is_superuser:
+            return super().destroy(request, *args, **kwargs)
+        elif request.user.is_authenticated:
+            lead = self.get_object()
+            if lead.agent == request.user:
+                return super().destroy(request, *args, **kwargs)
+            else:
+                return Response(status=status.HTTP_403_FORBIDDEN)
+        else:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
