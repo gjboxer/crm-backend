@@ -35,7 +35,6 @@ class LeadAPIViewSet(ModelViewSet):
             queryset = Lead.objects.all()
         elif request.user.is_authenticated:
             queryset = Lead.objects.filter(agent=request.user)
-            print(queryset)
         else:
             queryset = Lead.objects.none()
 
