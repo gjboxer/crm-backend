@@ -35,9 +35,15 @@ class LeadAPIViewSet(ModelViewSet):
             queryset = Lead.objects.all()
         elif request.user.is_authenticated:
             queryset = Lead.objects.filter(agent=request.user)
+            print(queryset)
         else:
             queryset = Lead.objects.none()
+
         serializer = LeadSerializer(queryset, many=True)
+        page=self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = LeadSerializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request, *args, **kwargs):
