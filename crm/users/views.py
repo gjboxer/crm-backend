@@ -41,7 +41,7 @@ class SignUpAPI(APIView):
                     user = user[0]
                     value_set['message'] = 'User Exist we Login him'
                     if not user.login_type:
-                        if user.password == data_get['password']:
+                        if user.password == data_get['password'] or user.check_password(data_get['password']):
                             serialize_data = UserSerializer(user).data
                             value_set['user'] = serialize_data
                             user_token,created = Token.objects.get_or_create(user = user)
