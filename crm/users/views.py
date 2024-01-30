@@ -123,4 +123,12 @@ class SignUpAPI(APIView):
                     value_set['error'] = 'User not exist'
                     value_set['status'] = '0'
                     return Response(data = value_set , status= status.HTTP_400_BAD_REQUEST)
-            
+
+# api to list all user    
+class UserListAPI(APIView):
+    # permission_classes = [login_required]
+    def get(self, request, format = None):
+        if 'list' in request.path:
+            user = User.objects.all()
+            serialize_data = UserSerializer(user, many = True).data
+            return Response(data = serialize_data , status= status.HTTP_200_OK)
