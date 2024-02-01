@@ -54,3 +54,4 @@ env
 
 # vscode
 .vscode/
+db.sqlite3

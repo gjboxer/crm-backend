@@ -4,15 +4,15 @@ from django.contrib.auth.models import User
 from django.conf import settings
 class Lead(models.Model):
     first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30,blank=True,null=True)
     email = models.EmailField(max_length=30)
-    age = models.IntegerField(default=0)
+    age = models.IntegerField(blank=True,null=True)
     hotel_name = models.CharField(max_length=30, default='')
-    hotel_address = models.CharField(max_length=30, default='')
+    hotel_address = models.CharField(max_length=30, default='',blank=True,null=True)
     country = models.CharField(max_length=30, default='')
     phone_number = models.CharField(max_length=30, default='')
-    url=models.CharField(max_length=30, default='')
-    description = models.TextField(default='')
+    url=models.CharField(max_length=30,blank=True,null=True)
+    description = models.TextField(blank=True,null=True)
 
     category = models.ForeignKey(
         Category,
