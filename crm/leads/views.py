@@ -32,9 +32,9 @@ class LeadAPIViewSet(ModelViewSet):
         """
         # give paginated response according to super user and normal user
         if request.user.is_superuser or request.user.role == 'admin':
-            queryset = Lead.objects.all()
+            queryset = Lead.objects.all().order_by('-created_at')
         elif request.user.is_authenticated:
-            queryset = Lead.objects.filter(agent=request.user)
+            queryset = Lead.objects.filter(agent=request.user).order_by('-created_at')
         else:
             queryset = Lead.objects.none()
 
